@@ -1,19 +1,25 @@
-import { Navbar } from "./Navbar"
+import HomeLayout from "./assets/components/hoc/Homelayout"
+import VideoPlayer from "./assets/components/VideoPlayer"
+
+
 
 
 function App() {
   
   return (
     < >
-    <Navbar/>
+  
+    <HomeLayout>
+    < VideoPlayer/>
+    </HomeLayout>
+     
 
-      <div>
+    
    
-        
-      </div>
-      
     </>
   )
 }
-
 export default App
+
+
+
