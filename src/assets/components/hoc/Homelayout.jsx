@@ -11,16 +11,18 @@
 // }
 // -----------------------------------------
 import { Link } from "react-router-dom";
+import { Navbar } from "../Navbar";
 
 function HomeLayout({ children }) {
   return (
-    <div>
-      <header>
-        <nav>
-          <Link to="/login">Iniciar Sesión</Link> |{" "}
-          <Link to="/register">Registrarse</Link>
+    <div className="flex">
+      
+        <nav >
+         <Navbar/>
+          {/* <Link to="/login">Iniciar Sesión</Link> |{" "}
+          <Link to="/register">Registrarse</Link> */}
         </nav>
-      </header>
+     
 
       <main>{children}</main>
     </div>
